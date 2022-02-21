@@ -1,0 +1,76 @@
+.testimonials {
+    text-align: center;
+    // padding-top: 10rem;
+    h2 {
+        text-transform: uppercase;
+    }
+    @include breakpoints-down(medium) {
+        h2 {
+            font-size: $font-med;
+        }
+    }
+
+    &__grid {
+        @include breakpoints-up(medium){
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        @include breakpoints-down(medium) {
+            display: grid;
+            // gap: 2.5rem;
+            
+            
+        }
+    }
+
+    &__row {
+        // flex: 1 0 30%;
+        flex-basis: 25%;
+        // border: 1px solid magenta;
+    }
+
+    &__image {
+        img {
+            max-width: 4.375rem;
+            border-radius: 50%;
+        }
+
+        @include breakpoints-down(medium) {
+            img {
+                max-width: 3.75rem;
+            }
+        }
+    }
+
+    &__text {
+        p {
+            font-size: $font-sm;
+            font-family: $font-barlow;
+            line-height: 1.5rem;
+            color: $darkBlue;
+        }
+
+        @include breakpoints-down(medium) {
+            p {
+                font-size: $font-med;
+            }
+        }
+    }
+
+    &__name {
+        h3 {
+            color: $darkBlue;
+            margin-bottom: 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+            font-family: $font-barlow;
+            text-align: center;
+            
+        }
+    }
+
+}

@@ -1,0 +1,78 @@
+.gallery {
+    // min-height: 36rem;
+    &__grid {
+        @include breakpoints-up(medium){
+            display: flex;
+            min-height: 28rem;
+
+        }
+        @include breakpoints-up(xlarge){
+            min-height: 40rem;
+        }
+
+        @include breakpoints-down(medium) {
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 32rem;
+            // gap: 2.5rem;
+        }
+
+    }
+
+    &__row {
+        background-color: aqua;
+    }
+
+    &__image {
+        flex: 1 0 25%;
+        background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @include breakpoints-down(medium){
+            flex: 1 0 50%;
+            background-image: url(../../images/mobile/image-gallery-milkbottles.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    &__image~&__image {
+        flex: 1 0 25%;
+        background-image: url(../../images/desktop/image-gallery-orange.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @include breakpoints-down(medium){
+            flex: 1 0 50%;
+            background-image: url(../../images/mobile/image-gallery-orange.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    &__image~&__image~&__image {
+        flex: 1 0 25%;
+        background-image: url(../../images/desktop/image-gallery-cone.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @include breakpoints-down(medium){
+            flex: 1 0 50%;
+            background-image: url(../../images/mobile/image-gallery-cone.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    &__image~&__image~&__image~&__image {
+        flex: 1 0 25%;
+        background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @include breakpoints-down(medium){
+            flex: 1 0 50%;
+            background-image: url(../../images/mobile/image-gallery-sugar-cubes.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

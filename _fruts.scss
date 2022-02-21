@@ -1,0 +1,55 @@
+.fruts {
+    min-height: 36rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+
+    @include breakpoints-down(medium) {
+        flex-direction: column;
+    }
+
+    &__image {
+        flex: 1;
+        background-image: url(../../images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100%;
+        position: relative;
+
+        @include breakpoints-down(medium) {
+
+        }
+
+
+        h3 {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 1.5rem;
+            color: $darkBlue;
+        }
+
+        p {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%);
+            // padding: 0 2rem 0;
+            font-family: $font-barlow;
+            color: $darkBlue;
+            font-size: $font-sm;
+        }
+    }
+
+    &__image:nth-child(2) {
+        flex: 1;
+        background-image: url(../../images/desktop/image-photography.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100%;
+    }
+
+}
