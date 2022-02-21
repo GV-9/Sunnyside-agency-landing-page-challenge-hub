@@ -25,52 +25,60 @@
 
     &__image {
         flex: 1 0 25%;
-        background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
+        //background-image: url(../../images/desktop/image-gallery-milkbottles.jpg);
+        background-image: url(image-gallery-milkbottles.jpg);
         background-position: center;
         background-size: cover;
 
         @include breakpoints-down(medium){
             flex: 1 0 50%;
-            background-image: url(../../images/mobile/image-gallery-milkbottles.jpg);
+            //background-image: url(../../images/mobile/image-gallery-milkbottles.jpg);
+            background-image: url(image-gallery-milkbottles.jpg);
             background-position: center;
             background-size: cover;
         }
     }
     &__image~&__image {
         flex: 1 0 25%;
-        background-image: url(../../images/desktop/image-gallery-orange.jpg);
+        //background-image: url(../../images/desktop/image-gallery-orange.jpg);
+        background-image: url(image-gallery-orange.jpg);
         background-position: center;
         background-size: cover;
 
         @include breakpoints-down(medium){
             flex: 1 0 50%;
-            background-image: url(../../images/mobile/image-gallery-orange.jpg);
+            //background-image: url(../../images/mobile/image-gallery-orange.jpg);
+            background-image: url(image-gallery-orange.jpg);
             background-position: center;
             background-size: cover;
         }
     }
     &__image~&__image~&__image {
         flex: 1 0 25%;
-        background-image: url(../../images/desktop/image-gallery-cone.jpg);
+        //background-image: url(../../images/desktop/image-gallery-cone.jpg);
+        background-image: url(image-gallery-cone.jpg);
         background-position: center;
         background-size: cover;
 
         @include breakpoints-down(medium){
             flex: 1 0 50%;
-            background-image: url(../../images/mobile/image-gallery-cone.jpg);
+            //background-image: url(../../images/mobile/image-gallery-cone.jpg);
+            background-image: url(image-gallery-cone.jpg);
             background-position: center;
             background-size: cover;
         }
     }
     &__image~&__image~&__image~&__image {
         flex: 1 0 25%;
-        background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg);
+        //background-image: url(../../images/desktop/image-gallery-sugarcubes.jpg);
+        background-image: url(image-gallery-sugarcubes.jpg);
         background-position: center;
         background-size: cover;
 
         @include breakpoints-down(medium){
             flex: 1 0 50%;
-            background-image: url(../../images/mobile/image-gallery-sugar-cubes.jpg);
+            //background-image: url(../../images/mobile/image-gallery-sugar-cubes.jpg);
+            background-image: url(image-gallery-sugarcubes.jpg);
             background-position: center;
             background-size: cover;
         }
