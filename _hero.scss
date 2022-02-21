@@ -1,0 +1,97 @@
+.hero {
+    background-color: $blue;
+
+    @include breakpoints-up(large) {
+        display: flex;
+        min-height: 42rem;
+        align-items: center;
+    }
+
+    @include breakpoints-up(xlarge) {
+        display: flex;
+        min-height: 52rem;
+        align-items: center;
+        justify-content: center;
+        background: $blue;
+    }
+
+
+    &__image {
+        position: relative;
+        height: 60vh;
+        //background-image: url(../../images/mobile/image-header.jpg); 
+        background-image: url(image-header.jpg);
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @include breakpoints-up(large) {
+            flex: 1;
+            // bottom: 0.75rem;
+            // height: 50vh;
+            //background-image: url(../../images/desktop/image-header.jpg);
+            background-image: url(image-header.jpg);
+            
+        }
+
+        @include breakpoints-up(xlarge) {
+            flex: 1;
+            height: 52rem;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);   
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            //background-image: url(../../images/icon-arrow-down.svg);
+            background-image: url(icon-arrow-down.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 1.75rem;
+            height: 90px;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-70%);
+
+            @include breakpoints-up(large) {
+                flex: 1;
+                top: 45%;
+            }
+
+            @include breakpoints-up(xlarge) {
+                top: 50%
+            }
+        }
+    }
+
+    &__text {
+        text-align: center;
+        margin: 0 auto;
+
+        h1 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%);
+            padding-top: 0px;
+            font-size: 2.5rem;
+            color: $white;
+            text-transform: uppercase;
+            letter-spacing: 0.625rem;
+
+            @include breakpoints-up(large) {
+                font-size: 2.75rem;
+            }
+
+            @include breakpoints-up(xlarge) {
+                font-size: 3rem;
+            }
+
+        }
+    }   
+
+}
+
