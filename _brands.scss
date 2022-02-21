@@ -115,7 +115,8 @@
     &__image {
             
             flex: 1 0 50%;
-            background-image: url(../../images/desktop/image-transform.jpg);
+            //background-image: url(../../images/desktop/image-transform.jpg);
+            background-image: url(image-transform.jpg);
             background-position: center;
             background-repeat: no-repeat;
 
@@ -126,7 +127,8 @@
         @include breakpoints-down(medium) {
             order: 1;
             min-height: 15rem;
-            background-image: url(../../images/mobile/image-transform.jpg);
+            //background-image: url(../../images/mobile/image-transform.jpg);
+            background-image: url(image-transform.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -136,14 +138,16 @@
     &__image~&__image {
 
             flex: 1 0 50%;
-            background-image: url(../../images/desktop/image-stand-out.jpg);
+            //background-image: url(../../images/desktop/image-stand-out.jpg);
+            background-image: url(image-stand-out.jpg);
             background-position: center;
             background-repeat: no-repeat;
 
             @include breakpoints-down(medium) {
                 flex: 2;
                 order: 3;
-                background-image: url(../../images/mobile/image-stand-out.jpg);
+                //background-image: url(../../images/mobile/image-stand-out.jpg);
+                background-image: url(image-stand-out.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -154,7 +158,8 @@
     &__image~&__image~&__image {
         position: relative;
         flex: 1 0 50%;
-        background-image: url(../../images/desktop/image-graphic-design.jpg);
+        //background-image: url(../../images/desktop/image-graphic-design.jpg);
+        background-image: url(image-graphic-design.jpg);
         background-position: center;
         background-repeat: no-repeat;
         min-height: 36rem;
@@ -207,7 +212,8 @@
 
     &__image~&__image~&__image~&__image {
         flex: 1 0 50%;
-        background-image: url(../../images/desktop/image-photography.jpg);
+        //background-image: url(../../images/desktop/image-photography.jpg);
+        background-image: url(image-photography.jpg);
         background-position: center;
         background-repeat: no-repeat;
 
