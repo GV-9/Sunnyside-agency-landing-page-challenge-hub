@@ -19,7 +19,8 @@
     &__image {
         position: relative;
         height: 60vh;
-        background-image: url(../../images/mobile/image-header.jpg);
+        //background-image: url(../../images/mobile/image-header.jpg);
+        background-image: url(image-header.jpg);
         background-position: bottom center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -28,7 +29,8 @@
             flex: 1;
             // bottom: 0.75rem;
             // height: 50vh;
-            background-image: url(../../images/desktop/image-header.jpg);
+            //background-image: url(../../images/desktop/image-header.jpg);
+            background-image: url(image-header.jpg);
             
         }
 
@@ -43,7 +45,8 @@
         &::before {
             content: "";
             position: absolute;
-            background-image: url(../../images/icon-arrow-down.svg);
+            //background-image: url(../../images/icon-arrow-down.svg);
+            background-image: url(icon-arrow-down.svg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
